@@ -1,0 +1,88 @@
+/* Main Widget */
+#ClientForm{
+    /*
+     * Image cover background
+     *
+     * background: url("path:assets/back.png");
+     * background-size: cover;
+     *
+     * background-size not supported, but you can use "background-covered" -- this attribute set only main background
+    */
+    background-covered: "path:assets/back.png";
+}
+
+#logo{
+    color: #fff;
+}
+
+QPushButton, QComboBox{
+    border-color: #d63f5b;
+    background: #d63f5b;
+    border-radius: 15px;
+}
+
+QPushButton:hover{
+    background: #bb3750;
+    border-color: #bb3750;
+}
+
+QLineEdit{
+    border-color: #d63f5b;
+    border-radius: 15px;
+    color: #d63f5b;
+    background: #0d183d;
+}
+
+QLabel, QCheckBox{
+    color: #d63f5b;
+}
+
+QCheckBox:hover, QCheckBox:checked, QCheckBox::indicator{
+	border-color: #d63f5b;
+}
+
+QCheckBox::indicator:checked{
+	background-color: #d63f5b;
+	color: #d63f5b;
+}
+
+#bottomWidget, #progressWidget{
+	background: #0d183d;
+	border-top: none;
+}
+
+#qq{
+    background: transparent;
+}
+
+#progressBar::chunk{
+	background: #d63f5b;
+	margin: 0px;
+}
+
+#progressBar{
+	border: 1px solid #d63f5b;
+	background: #0d183d;
+}
+
+
+QComboBox QAbstractItemView, QComboBox:on, QFileDialog, QFileDialog QListView, QFileDialog QTreeView, QFileDialog QTreeView QHeaderView{
+	background: #0d183d;
+	color: #d63f5b;
+}
+
+QComboBox::item:selected, QFileDialog QListView::item:selected, QFileDialog QTreeView::item:selected{
+	background: #d63f5b;
+	color: #0d183d;
+}
+
+QComboBox::item:checked, QFileDialog QListView::item:hover, QFileDialog QTreeView::item:hover{
+	background: rgba(214, 63, 91, .8);
+	color: #0d183d;
+}
+
+QFileDialog QTreeView QHeaderView{
+	border-bottom: 2px solid #d63f5b;
+}
+
+
